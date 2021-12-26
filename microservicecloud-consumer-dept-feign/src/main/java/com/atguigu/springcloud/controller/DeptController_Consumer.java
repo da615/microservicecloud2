@@ -15,7 +15,7 @@ public class DeptController_Consumer
 {
 
 	//private static final String REST_URL_PREFIX = "http://localhost:8001";
-	//private static final String REST_URL_PREFIX = "http://MICROSERVICECLOUD-DEPT";
+//	private static final String REST_URL_PREFIX = "http://MICROSERVICECLOUD-DEPT";
 
 	/**
 	 * 使用 使用restTemplate访问restful接口非常的简单粗暴无脑。 (url, requestMap,
@@ -23,22 +23,22 @@ public class DeptController_Consumer
 	 */
 	/*
 	 * @Autowired private RestTemplate restTemplate;
-	 * 
+	 *
 	 * @RequestMapping(value = "/consumer/dept/add") public boolean add(Dept dept) {
 	 * return restTemplate.postForObject(REST_URL_PREFIX + "/dept/add", dept,
 	 * Boolean.class); }
-	 * 
+	 *
 	 * @RequestMapping(value = "/consumer/dept/get/{id}") public Dept
 	 * get(@PathVariable("id") Long id) { return
 	 * restTemplate.getForObject(REST_URL_PREFIX + "/dept/get/" + id, Dept.class); }
-	 * 
+	 *
 	 * @SuppressWarnings("unchecked")
-	 * 
+	 *
 	 * @RequestMapping(value = "/consumer/dept/list") public List<Dept> list() {
 	 * return restTemplate.getForObject(REST_URL_PREFIX + "/dept/list", List.class);
 	 * }
 	 */
-	
+
 	@Autowired
 	private DeptClientService service;
 
